@@ -8,6 +8,7 @@ client.on("ready", () => {
 })
 
 client.on("message", message => {
+  if(message.author.bot) return;
   if(message.mentions.users.first().id === client.user.id || message.mentions.users.first().id === client.id || message.content.includes("@someone")){
     let members = [];
     message.guild.members.cache.map(member => {
