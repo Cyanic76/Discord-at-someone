@@ -1,10 +1,17 @@
 const Discord = require("discord.js");
-const client = new Discord.Client();
+const client = new Discord.Client({
+  fetchAllMembers: true
+});
 
 client.login(process.env['TOKEN']);
 
 client.on("ready", () => {
-  console.log(`@someone is ready!`);
+  client.guilds.cache.map(g => {
+    g.members.cache.map(m => {
+      client.users.cache.get(m.id);
+    })
+  })
+  console.log(`@someone is ready.`);
 })
 
 client.on("message", message => {
