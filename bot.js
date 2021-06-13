@@ -3,7 +3,7 @@ const client = new Discord.Client({
   fetchAllMembers: true
 });
 
-client.login(process.env['TOKEN']);
+client.login(process.env.TOKEN);
 
 client.on("ready", () => {
   client.guilds.cache.map(g => {
