@@ -1,0 +1,23 @@
+{
+  "name": "Discord-at-someone",
+  "version": "1.0.0",
+  "description": "JavaScript @someone bot (read README.md & wiki for more info).",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "discord.js": "^12.4.1"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://github.com/Cyanic76/Discord-at-someone"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node"
+  ]
+}
