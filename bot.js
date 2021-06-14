@@ -20,7 +20,6 @@ client.on("message", message => {
   if(p && p.id === client.user.id || p && p.id === client.id){
     let members = [];
     message.guild.members.cache.map(member => {
-      if(member.user.bot) return;
       members.push(member.user.id);
     });
     let guildMember = members[Math.floor(Math.random()*members.length)]
