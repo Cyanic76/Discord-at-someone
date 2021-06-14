@@ -17,7 +17,7 @@ client.on("ready", () => {
 client.on("message", message => {
   if(message.author.bot) return;
   const p = message.mentions.users.first();
-  if(p.id === client.user.id || p.id === client.id){
+  if(p && p.id === client.user.id || p && p.id === client.id){
     let members = [];
     message.guild.members.cache.map(member => {
       if(member.user.bot) return;
@@ -26,5 +26,5 @@ client.on("message", message => {
     let guildMember = members[Math.floor(Math.random()*members.length)]
     message.channel.send(`<@${guildMember}>`)
     return;
-  }
+  } else return;
 });
