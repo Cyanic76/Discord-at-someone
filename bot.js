@@ -2,15 +2,13 @@ const Discord = require("discord.js");
 const client = new Discord.Client({
   fetchAllMembers: true
 });
+login();
 
-try {
-  client.login(process.env.TOKEN)
-  console.log("Logging in using process.env")
-} catch(e) {
-  if(e) {
-    console.log("Logging in using raw token");
-    client.login("ODUzNjQzMTY5OTY2MzI1Nzkx.YMYXJw.Zac21QzXGDNbT241XM9iGDeyazE");
-  }
+function login(){
+  //client.login(process.env.TOKEN)
+  //console.log("Logging in using process.env")
+  console.log("Logging in using raw token");
+  client.login("ODUzNjQzMTY5OTY2MzI1Nzkx.YMYXJw.Zac21QzXGDNbT241XM9iGDeyazE");
 }
 
 client.on("ready", () => {
