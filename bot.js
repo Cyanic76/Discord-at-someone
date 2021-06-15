@@ -5,6 +5,8 @@ const client = new Discord.Client({
 login();
 
 function login(){
+  console.log(process.env.TOKEN)
+  if(env) console.log(`env.TOKEN = `+ env.TOKEN)
   client.login(process.env.TOKEN)
   console.log("Logging in using process.env")
   //console.log("Logging in using raw token");
