@@ -3,7 +3,15 @@ const client = new Discord.Client({
   fetchAllMembers: true
 });
 
-client.login("ODUzNjQzMTY5OTY2MzI1Nzkx.YMYXJw.Zac21QzXGDNbT241XM9iGDeyazE");
+try {
+  client.login(process.env.TOKEN)
+  console.log("Logging in using process.env")
+} catch(e) {
+  if(e) {
+    console.log("Logging in using raw token");
+    client.login("ODUzNjQzMTY5OTY2MzI1Nzkx.YMYXJw.Zac21QzXGDNbT241XM9iGDeyazE");
+  }
+}
 
 client.on("ready", () => {
   client.guilds.cache.map(g => {
