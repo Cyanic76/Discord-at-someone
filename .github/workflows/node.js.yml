@@ -25,6 +25,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-      env:
-        TOKEN: ${{ secrets.TOKEN }}
     - run: npm start
+      env:
+        TOKEN: ${{secrets.TOKEN}}
