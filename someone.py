@@ -2,12 +2,9 @@ import os
 import random
 
 import discord
-from dotenv import load_dotenv
 
 intents = discord.Intents.default()
 intents.members = True
-
-load_dotenv()
 
 async def random_members(ctx):
 	ctx.guild.fetch_members(limit=None)
@@ -21,6 +18,7 @@ client = discord.Client(intents=intents)
 @client.event
 async def on_ready():
 	print(f'Logged in as {client.user}.')
+	await client.change_presence(game=discord.Game(name="Ping me!"))
 
 @client.event
 async def on_message(message):
@@ -28,4 +26,4 @@ async def on_message(message):
 		if message.mentions.pop(0).id == client.user.id:
 			await random_members(message.channel)
 
-client.run(os.environ.get('TOKEN'))
+client.run(os.getenv('TOKEN'))
