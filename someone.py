@@ -8,7 +8,6 @@ intents = discord.Intents.default()
 intents.members = True
 
 #load_dotenv()
-TOKEN = os.environ.get('TOKEN')
 
 async def random_members(ctx):
 	ctx.guild.fetch_members(limit=None)
@@ -28,11 +27,5 @@ async def on_message(message):
 	if message.author.bot == False:
 		if message.mentions.pop(0).id == client.user.id:
 			await random_members(message.channel)
-			#members = message.guild.members
-			#count = message.guild.member_count - 1
-			#m = random.sample(members, count)
-			#await message.channel.send('<@{m.id}>')
-	else:
-		return
 
-client.run(TOKEN)
+client.run(os.environ.get('TOKEN'))
