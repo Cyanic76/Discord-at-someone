@@ -26,6 +26,6 @@ jobs:
       
       - name: Run bot
         run: python3 someone.py
-        with:
-          token: {{github.TOKEN}}
+        env:
+          token: ${{ github.TOKEN }}
         
