@@ -1,10 +1,14 @@
-import os
-import random
-
-import discord
+import discord, os, random, json
 
 intents = discord.Intents.default()
 intents.members = True
+
+def token():
+	file = open("token.json", "r")
+	json_object = json.load(file)
+	file.close()
+	token = str(json_object['token'])
+	return token
 
 async def random_members(ctx):
 	ctx.guild.fetch_members(limit=None)
@@ -26,4 +30,4 @@ async def on_message(message):
 		if message.mentions.pop(0).id == client.user.id:
 			await random_members(message.channel)
 
-client.run(os.getenv('TOKEN'))
+client.run(get_token())
