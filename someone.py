@@ -22,7 +22,6 @@ client = discord.Client(intents=intents)
 @client.event
 async def on_ready():
 	print(f'Logged in as {client.user}.')
-	await client.change_presence(game=discord.Game(name="Ping me!"))
 
 @client.event
 async def on_message(message):
