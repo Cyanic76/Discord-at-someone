@@ -2,7 +2,9 @@
 Yet another Discord bot simulating @someone.
 
 ## What is @someone ?
-It was an old Discord feature that got removed. It was meant to randomly ping someone. That's what this bot does instead.
+It was an old Discord feature that got removed. It was meant to randomly ping someone. This bot aims to bring the feature back to Discord.
+
+[Click here](https://www.youtube.com/watch?v=BeG5FqTpl9U) to view Discord's @someone showcase.
 
 ## How to use ?
 Say `@someone` or mention the bot.
