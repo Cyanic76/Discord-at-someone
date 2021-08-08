@@ -14,8 +14,7 @@ async def random_members(ctx):
 	ctx.guild.fetch_members(limit=None)
 	members = ctx.guild.members
 	random_members = random.choice(members)
-	print(f'{members}')
-	await ctx.send(f'{random_members.id}')
+	await ctx.send(f'<@{random_members.id}>')
 
 client = discord.Client(intents=intents)
 
