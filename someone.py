@@ -28,4 +28,4 @@ async def on_message(message):
 		if message.mentions.pop(0).id == client.user.id:
 			await random_members(message.channel)
 
-client.run(os.environ.get('TOKEN'))
+client.run(os.environ.get('token'))
