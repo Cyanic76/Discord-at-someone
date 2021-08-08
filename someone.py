@@ -8,7 +8,7 @@ intents = discord.Intents.default()
 intents.members = True
 
 load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+TOKEN = os.getenv('TOKEN')
 
 async def random_members(ctx):
 	ctx.guild.fetch_members(limit=None)
