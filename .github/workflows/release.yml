@@ -20,6 +20,10 @@ jobs:
         with:
           python-version: "3.9"
       
+      - name: Upgrade pip
+        run: |
+          pip install --upgrade pip
+      
       - name: Install pip modules
         run: |
           pip install discord.py python-dotenv
