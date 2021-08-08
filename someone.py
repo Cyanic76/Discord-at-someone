@@ -2,13 +2,13 @@ import os
 import random
 
 import discord
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 intents = discord.Intents.default()
 intents.members = True
 
-load_dotenv()
-TOKEN = os.getenv('TOKEN')
+#load_dotenv()
+TOKEN = os.environ.get('TOKEN')
 
 async def random_members(ctx):
 	ctx.guild.fetch_members(limit=None)
