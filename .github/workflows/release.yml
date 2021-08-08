@@ -1,0 +1,31 @@
+name: Bot
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+        with:
+          fetch-depth: 2
+      
+      - name: Python setup
+        uses: actions/setup-python@v2.2.2
+        with:
+          python-version: "3.9"
+      
+      - name: Install pip modules
+        run: |
+          pip install discord.py python-dotenv
+      
+      - name: Run bot
+        run: python3 someone.py
+        with:
+          token: {{github.TOKEN}}
+        
