@@ -30,6 +30,6 @@ async def on_message(message):
 		if message.mentions.pop(0).id == client.user.id:
 			await random_members(message.channel)
 
-TOKEN = os.getenv("DISCORD_TOKEN")
+TOKEN = os.getenv("TOKEN")
 
 client.run(TOKEN)
