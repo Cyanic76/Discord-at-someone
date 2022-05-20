@@ -17,9 +17,8 @@ In the meantime, you could try blocking the bot to avoid getting pinged.
 ## Links
 [Invite the bot](https://r.cyanic.tk/?id=8) |
 [Join my server](https://cyanic.tk/discord) |
-[Status](https://cyanic.tk/status) (Uptime: 99%) |
 [View on top.gg](https://top.gg/bot/853643169966325791) | 
-[Vote on top.gg](https://top.gg/bot/853643169966325791/vote)
+[View on overwatch.wtf](https://overwatch.wtf/applications/853643169966325791)
 
 [![Vote on top.gg](https://top.gg/api/widget/upvotes/853643169966325791.svg)](https://top.gg/bot/853643169966325791/vote)
 
