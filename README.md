@@ -16,11 +16,8 @@ In the meantime, you could try blocking the bot to avoid getting pinged.
 
 ## Links
 [Invite the bot](https://r.cyanic.tk/?id=8) |
-[Join my server](https://cyanic.tk/discord) |
-[View on top.gg](https://top.gg/bot/853643169966325791) | 
+[Join my server](https://discord.gg/zp8zF7Zx7y) |
 [View on overwatch.wtf](https://overwatch.wtf/applications/853643169966325791)
-
-[![Vote on top.gg](https://top.gg/api/widget/upvotes/853643169966325791.svg)](https://top.gg/bot/853643169966325791/vote)
 
 ### Privacy & terms of use
 No data is collected by this bot. Discord may collect data about messages, channels and more.
