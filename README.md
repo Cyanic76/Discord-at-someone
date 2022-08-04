@@ -1,3 +1,5 @@
+:warning: [Moved](https://github.com/github/site-policy/pull/582) to **[Codeberg](https://codeberg.org/Cyanic76/at-someone)**.
+
 # @someone
 Yet another Discord bot simulating @someone.
 
